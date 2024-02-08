@@ -72,14 +72,9 @@ input[type="checkbox"] {
   padding: 0 5px;
   border-radius: 5px;
   border: none;
-  background-color: var(--warning);
+  background-color: transparent;
   cursor: pointer;
-  transition: all 250ms ease-in-out;
   color: hsl(0, 0%, 30%);
-}
-
-.btn-delete:hover {
-  box-shadow: 0 0 10px var(--warning);
 }
 
 .todos {
