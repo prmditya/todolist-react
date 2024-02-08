@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header>
       <h1>To-Do List</h1>
-      <p>{new Date().toShortFormat()}, Time : {time.toLocaleTimeString()}</p>
+      <p>{new Date().toShortFormat()}<br />{time.toLocaleTimeString()}</p>
     </header>
   )
 }

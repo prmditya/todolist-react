@@ -1,4 +1,4 @@
-@import url("https://api.fontshare.com/v2/css?f[]=satoshi@500&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,500&display=swap");
 
 :root {
   --warning: #ff9a9a;
@@ -12,8 +12,12 @@
   font-family: "Satoshi", Arial, Helvetica, sans-serif;
 }
 
+*::selection {
+  background-color: transparent;
+}
+
 body {
-  height: 100dvh;
+  height: 100%;
   display: flex;
   justify-content: center;
   background-color: #d9d9d9;
@@ -26,7 +30,7 @@ body {
 
 h1 {
   font-size: 64px;
-  font-weight: 1000;
+  font-weight: bolder;
 }
 
 p {
@@ -52,6 +56,10 @@ p {
   border: none;
 }
 
+.input-todo::selection {
+  background-color: lightblue;
+}
+
 input[type="checkbox"] {
   width: 25px;
   height: 25px;
@@ -67,6 +75,7 @@ input[type="checkbox"] {
   background-color: var(--warning);
   cursor: pointer;
   transition: all 250ms ease-in-out;
+  color: hsl(0, 0%, 30%);
 }
 
 .btn-delete:hover {

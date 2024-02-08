@@ -19,7 +19,7 @@ export default function ToDoList() {
           <div className="card-todo" key={todo.id}>
             <input type="checkbox" />
             <input className="input-todo" type="text" placeholder="Your To-Do here..." />
-            <button className="btn-delete" onClick={() => handleDelete(todo.id)}>Delete</button>
+            <button className="btn-delete" onClick={() => handleDelete(todo.id)}>✖</button>
           </div>
         ))
       }
