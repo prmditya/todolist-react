@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ToDo from "./ToDo";
 
 export default function ToDoList() {
 
@@ -16,13 +17,8 @@ export default function ToDoList() {
     <>
       <section className="todos">{
         todos.map((todo) => (
-          <div className="card-todo" key={todo.id}>
-            <input type="checkbox" />
-            <input className="input-todo" type="text" placeholder="Your To-Do here..." />
-            <button className="btn-delete" onClick={() => handleDelete(todo.id)}>✖</button>
-          </div>
-        ))
-      }
+          <ToDo key={todo.id} handleDelete={() => handleDelete(todo.id)} />
+        ))}
       </section>
       <button className="btn-create" onClick={handleCreate}>+</button>
     </>

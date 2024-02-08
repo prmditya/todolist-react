@@ -16,12 +16,11 @@ export default function Header() {
     const monthNames = ["January", "February", "March", "April",
       "May", "June", "July", "August",
       "September", "October", "November", "December"];
-    const dayNames = ['Sund', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
     const dayName = dayNames[this.getDay()];
     const day = this.getDate();
-    const monthIndex = this.getMonth();
-    const monthName = monthNames[monthIndex];
+    const monthName = monthNames[this.getMonth()];
     const year = this.getFullYear();
 
     return `${dayName}, ${day} ${monthName} ${year}`;
