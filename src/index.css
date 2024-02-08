@@ -67,6 +67,11 @@ input[type="checkbox"] {
   transition: all ease-in-out;
 }
 
+input[type="checkbox"]:checked ~ input[type="text"] {
+  color: #666;
+  text-decoration: line-through;
+}
+
 .btn-delete {
   margin-left: auto;
   padding: 0 5px;
