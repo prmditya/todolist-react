@@ -1,0 +1,107 @@
+:root {
+  --warning: #ff9a9a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Satoshi", Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  background-color: #d9d9d9;
+}
+.container {
+  width: 700px;
+  height: 100%;
+  padding: 63px 27px;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 1000;
+}
+
+p {
+  color: #666;
+  margin-bottom: 63px;
+}
+
+.card-todo {
+  max-width: 646px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.input-todo {
+  min-width: 75px;
+  border: none;
+  margin: 0 16px;
+}
+
+.input-todo:focus {
+  border: none;
+}
+
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  transition: all ease-in-out;
+}
+
+.btn-delete {
+  margin-left: auto;
+  padding: 0 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--warning);
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-delete:hover {
+  box-shadow: 0 0 10px var(--warning);
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-create {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%);
+  transition: all 250ms ease-in-out;
+  z-index: 999;
+}
+
+.btn-create:hover {
+  transform: translateX(-50%) translateY(-60%) rotate(-90deg);
+  box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.28);
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 100vw;
+    padding: 20px 20px;
+  }
+}
