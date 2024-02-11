@@ -53,6 +53,7 @@ p {
 }
 
 .input-todo:focus {
+  outline: none;
   border: none;
 }
 
