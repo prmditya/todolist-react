@@ -6,6 +6,10 @@ Welcome to the documentation for the TodoList app. This document serves as a gui
 
 This todolist web was develop by me with intentions to learn about react js.
 
+### Screenshot
+
+![](./web-ss.png)
+
 ### Technologies Used
 
 The TodoList app is built using the following technologies:
